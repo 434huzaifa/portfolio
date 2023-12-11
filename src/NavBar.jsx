@@ -5,8 +5,9 @@ const NavBar = () => {
         <Navbar fluid rounded>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Navbar.Link href="#" active>
-          Home
+
+        <Navbar.Link href="/Huzaifa_Full_Stack.pdf" download="Huzaifa_Full_Stack.pdf">
+          Download CV
         </Navbar.Link>
         <Navbar.Link  href="#">
           About
