@@ -3,7 +3,7 @@ import Hero from './Hero'
 import NavBar from './NavBar'
 import Projects from './Projects'
 import TechStack from './TechStack'
-
+import "./App.css"
 function App() {
 
   return (

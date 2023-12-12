@@ -1,21 +1,13 @@
-import { Navbar } from 'flowbite-react';
-
+import { Button, Navbar } from 'flowbite-react';
+import { FaFileDownload } from "react-icons/fa";
 const NavBar = () => {
     return (
         <Navbar fluid rounded>
-      <Navbar.Toggle />
-      <Navbar.Collapse>
-
-        <Navbar.Link href="/Huzaifa_Full_Stack.pdf" download="Huzaifa_Full_Stack.pdf">
-          Download CV
-        </Navbar.Link>
-        <Navbar.Link  href="#">
-          About
-        </Navbar.Link>
-        <Navbar.Link href="#">Services</Navbar.Link>
-        <Navbar.Link href="#">Pricing</Navbar.Link>
-        <Navbar.Link href="#">Contact</Navbar.Link>
-      </Navbar.Collapse>
+          <div className='flex w-full justify-end'>
+          <a href="/Huzaifa_Full_Stack.pdf" download="Huzaifa_Full_Stack.pdf">
+          <Button color="purple" size="sm"><span className='flex gap-3 items-center'><FaFileDownload /><>Download CV</></span></Button>
+          </a>
+          </div>
     </Navbar>
     );
 };
