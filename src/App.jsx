@@ -4,15 +4,19 @@ import NavBar from './NavBar'
 import Projects from './Projects'
 import TechStack from './TechStack'
 import "./App.css"
+import Extra from './Extra'
 function App() {
 
   return (
-    <div className='max-w-screen-xl mx-auto '>
-    <NavBar></NavBar>
-    <Hero></Hero>
-    <Projects></Projects>
-    <TechStack></TechStack>
-    <Contact></Contact>
+    <div className='dotbg bg-slate-950'>
+      <div className='max-w-screen-xl mx-auto '>
+        <NavBar></NavBar>
+        <Hero></Hero>
+        <Projects></Projects>
+        <TechStack></TechStack>
+        <Extra></Extra>
+        <Contact></Contact>
+      </div>
     </div>
   )
 }
