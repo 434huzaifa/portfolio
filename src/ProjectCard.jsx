@@ -2,7 +2,7 @@ import { Card } from "flowbite-react";
 
 const ProjectCard = ({ image, title, description, tech }) => {
     return (
-        <Card>
+        <Card className="bg-white/10 backdrop-blur-sm">
             {
                 image != null && <div className="flex justify-center">
                     <img src={image} alt="" className="w-60" />
