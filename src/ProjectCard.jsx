@@ -1,11 +1,22 @@
 import { Card } from "flowbite-react";
 
-const ProjectCard = () => {
+const ProjectCard = ({ image, title, description, tech }) => {
     return (
         <Card>
-            <div >
-            <img src="/my.png" alt="" className="w-60"/>
+            {
+                image != null && <div className="flex justify-center">
+                    <img src={image} alt="" className="w-60" />
+                </div>
+            }
 
+            <p className="text-4xl font-bold">{title}</p>
+            <p className="text-xl italic font-thin">{description}</p>
+            <div className="flex gap-2 justify-between">
+                {
+                    tech.map((x, index) => (
+                        <span className="text-2xl" key={index}>{x}</span>
+                    ))
+                }
             </div>
         </Card>
     );

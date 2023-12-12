@@ -11,7 +11,6 @@ const Hero = () => {
                 <div className="flex gap-5">
                     <ButtonButton link="http://www.linkedin.com/in/434-md-huzaifa" icon={<FaLinkedin />} title="LinkedIn" />
                     <ButtonButton link="mailto:saadhuzaifa2497@gmail.com" icon={<IoMdMail />} title="Mail" />
-
                     <ButtonButton link="https://github.com/434huzaifa?tab=repositories" icon={<FaGithubSquare />} title="Github" />
                 </div>
             </div>
