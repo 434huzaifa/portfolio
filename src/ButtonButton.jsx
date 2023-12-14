@@ -1,9 +1,9 @@
 const ButtonButton = ({link,title,icon}) => {
     return (
-        <a href={link} className='flex items-center w-28 justify-center rounded-lg border-2 border-purple-700 p-1'>
+        <a target="_blank" rel="noreferrer" href={link} className='flex items-center justify-center rounded py-2 px-3 border-2 border-purple-700 hover:bg-purple-700'>
             <span className='flex gap-2 items-center'>
-                {icon}
-                <span className='font-semibold'>{title}</span>
+                <span className="text-white">{icon}</span>
+                <span className='font-semibold text-white'>{title}</span>
             </span>
         </a>
     );

@@ -19,11 +19,11 @@ const TechStack = () => {
     <FaGitAlt/>,
 ]
     return (
-        <Card className="my-5 bg-white/10 backdrop-blur-sm">
+        <Card className="my-5 bg-transparent backdrop-blur-sm">
         <div className="flex gap-5 justify-center items-center p-5 flex-wrap">
             {
                 tehcs.map((x,index)=>(
-                    <span className="text-6xl">{x}</span>
+                    <span className="text-6xl text-slate-300">{x}</span>
                 ))
             }
 

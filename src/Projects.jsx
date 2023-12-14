@@ -14,7 +14,9 @@ const Projects = () => {
                 <SiExpress />,
                 <SiMongodb />,
                 <SiFirebase  />,
-            ]
+            ],
+            repo:"https://github.com/434huzaifa/SurveysSphere-Client",
+            live:"https://surveysphere-f19ed.web.app/"
         },
         {
             image: "/Job.png",
@@ -26,7 +28,9 @@ const Projects = () => {
                 <SiExpress />,
                 <SiMongodb />,
                 <SiFirebase  />,
-            ]
+            ],
+            repo:'https://github.com/434huzaifa/Job-The-Chakri_Client',
+            live:"https://job-the-chakri.web.app/"
         },
         {
             image: "/techtronics.png",
@@ -38,14 +42,17 @@ const Projects = () => {
                 <SiExpress />,
                 <SiMongodb />,
                 <SiFirebase  />,
-            ]
+            ],
+            repo:'https://github.com/434huzaifa/TechTronics-Client',
+            live:"https://techtronics-41c1d.web.app/"
+            
         },
     ]
     return (
-        <div className="grid grid-cols-3 gap-3 bg-transparent">
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-3 bg-transparent">
             {
                 projects.map((x, index) => (
-                    <ProjectCard key={index} image={x.image} title={x.title} description={x.description} tech={x.tech} ></ProjectCard>
+                    <ProjectCard key={index} image={x.image} title={x.title} description={x.description} tech={x.tech} live={x.live} repo={x.repo}></ProjectCard>
                 ))
             }
         </div>

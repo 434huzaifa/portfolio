@@ -8,8 +8,8 @@ import Extra from './Extra'
 function App() {
 
   return (
-    <div className='dotbg bg-slate-950'>
-      <div className='max-w-screen-xl mx-auto '>
+    <div className='dotbg bg-slate-950 min-h-screen '>
+      <div className='max-w-screen-xl xl:mx-auto mx-5'>
         <NavBar></NavBar>
         <Hero></Hero>
         <Projects></Projects>
